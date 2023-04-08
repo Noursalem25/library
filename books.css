@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1;
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: flex-start;
+    background-color: rgb(209, 156, 209);
+
+}
+.title{
+    color:rgb(93, 26, 156);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+    font-size: larger;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.filter{
+    color:rgb(93, 26, 156);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-direction: row;
+}
+input[type="text"]{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 217, 221);
+    color: rgb(93, 26, 156);
+    font-size: 15px;
+    margin-bottom: 70px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border-color:  rgb(93, 26, 156);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+input[type="button"]{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height:50px;
+    font-size: 20px;
+    margin-left: 100px;
+    padding-top: 3px;
+    border-radius: 40px;
+    background-color: rgb(247, 217, 221);
+    color: rgb(93, 26, 156);
+    font-weight: 500;
+    border-color:  rgb(93, 26, 156);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+label{
+    color:rgb(93, 26, 156);
+    font-size: 20px;
+    
+}
+select{
+    width: 60px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-left:10px;
+    background-color: rgb(247, 217, 221);
+    color:rgb(93, 26, 156) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    
+}
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+.listofbooks{
+    visibility: hidden;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+.book img {
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+  }
+.book .more .title{
+    font-size: 16px;
+    text-align: left;
+    color:rgb(93, 26, 156) ;
+    font-weight: 600;
+}
+.book .more .author{
+    font-size: 16px;
+    text-align: left;
+    color:rgb(93, 26, 156) ;
+    font-weight: 600;
+}
+.book  .more .link {
+    display: block;
+    margin-top: 10px;
+  }
+
+.book .more{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.favorite-button {
+    width:auto;
+    height:50px;
+    font-size: 15px;
+    margin-left: 100px;
+    padding-top: 3px;
+    border-radius: 40px;
+    background-color: rgb(247, 217, 221);
+    color: rgb(93, 26, 156);
+    font-weight: 100;
+    border-color:  rgb(93, 26, 156);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+li {
+    list-style-type: none;
+  }
+.btnn{
+    border-radius: 40px; 
+    background-color: rgb(247, 217, 221);
+    color: rgb(93, 26, 156);
+    font-weight: 100;
+    border-color:  rgb(93, 26, 156);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 40px;
+}
+  
+@media only screen and (min-width:1024px){
+    .filter{
+        
+        display: flex;
+        justify-content: left;
+        padding-left: 25px;
+    }
+    
+    img{
+        max-width: 540px;
+        margin-bottom: 36px;
+    }
+    .title{
+        font-weight: 1000;
+        font-size: 50px;
+        font-family: 'Alkatra', cursive;
+        margin-top: 30px;
+
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    select{
+        height: 40px;
+        width: 70px;
+        padding-right: 50%;
+        padding-right: 50%;
+    }
+    .btn{
+        padding-left: 10px;
+    }
+    .img{
+        margin-bottom:60px ;
+    }
+    .book {
+        display: flex;
+        align-items:start;
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content:flex-start;
+        padding-left: 10%;
+        padding-right: 90%;
+        
+      }
+    .book img{
+        margin-right: 70px;
+        margin-top: 10px;
+        width: 1000px;
+    }
+    .book .more{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        margin-right: 70px;
+        
+    }
+    .book .more .title{
+        white-space: nowrap;
+    }
+    .favorite-button{
+        white-space: nowrap;
+        margin-top: 50px;
+    }
+
+}
